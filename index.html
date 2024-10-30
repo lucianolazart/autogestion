@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet"> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autogestión médica</title>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img class="img_logo" src="./img/logo.png" alt="Logo Autogestión">
+        </div>
+
+        <h1>Autogestión médica</h1>
+
+        <nav>
+            <ul class="menu">
+                <li class="menuItem"><a class="textItem" href="#">Inicio</a></li>
+                <li class="menuItem"><a class="textItem" href="./pages/pacientes.html">Mis Pacientes</a></li>
+                <li class="menuItem"><a class="textItem" href="./pages/evoluciones.html">Mis Evoluciones</a></li>
+                <li class="menuItem"><a class="textItem" href="./pages/habitaciones.html">Habitaciones</a></li>
+                <li class="menuItem"><a class="textItem" href="./pages/consultorio.html">Consultorio</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+
+    <main>
+        <section>
+            <h2>¡Bienvenido!</h2>
+            <p>En esta página podrás gestionar tus pacientes, evoluciones, habitaciones y consultorio.</p>
+        </section>
+
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  ¿Quiénes somos?
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"><p>Somos un grupo de estudiantes de CoderHouse, cursando la carrera de Desarrollo Web.</p>
+                    <p>Creamos la web para poner en práctica los conocimientos adquiridos en el curso y proporcionar un medio para aquellos médicos que deseen autogestionar su información previo al vuelque de la misma en el sistema propio de su sanatorio u hospital.</p></div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                 ¿Qué ofrecemos?
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"><p>Ofrecemos una web sencilla y amigable, donde podrás gestionar tus pacientes, evoluciones, habitaciones y consultorio.</p>
+                    <p>Además, podrás visualizar la información de manera clara y ordenada, y realizar las modificaciones que consideres necesarias.</p></div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                 ¿Cómo comenzar?
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"><p>Para comenzar, selecciona una de las opciones del menú superior y comienza a autogestionar tu información.</p>
+                    <p>Si tienes alguna duda, no dudes en contactarnos a través de nuestras redes sociales.</p></div>
+              </div>
+            </div>
+        </div>
+
+    </main>
+
+    <hr>
+
+    <footer>
+        <h4>Contacto</h4>
+        <a href="https://www.instagram.com/" target="_blank"><img class="img_redes" src="./img/instagram.png" alt="Instagram"></a>
+        <a href="https://www.facebook.com/" target="_blank"><img class="img_redes" src="./img/facebook.png" alt="Facebook"></a>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+</body>
+</html>

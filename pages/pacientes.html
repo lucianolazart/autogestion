@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autogestión médica</title>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img class="img_logo" src="../img/logo.png" alt="Logo Autogestión">
+        </div>
+
+        <h1>Mis Pacientes</h1>
+
+        <nav>
+            <ul class="menu">
+                <li class="menuItem"><a class="textItem" href="../index.html">Inicio</a></li>
+                <li class="menuItem"><a class="textItem" href="#">Mis Pacientes</a></li>
+                <li class="menuItem"><a class="textItem" href="evoluciones.html">Mis Evoluciones</a></li>
+                <li class="menuItem"><a class="textItem" href="habitaciones.html">Habitaciones</a></li>
+                <li class="menuItem"><a class="textItem" href="consultorio.html">Consultorio</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+
+    <main>
+
+        <div class="pacientesButtons">
+            <button type="button" class="btn btn-primary">Agregar</button>
+            <button type="button" class="btn btn-danger">Eliminar</button>
+        </div>
+        
+        <table class="table">
+            <tr>
+                <th></th>
+                <th>Paciente</th>
+                <th>Edad</th>
+                <th>Género</th>
+                <th>Servicio</th>
+            </tr>
+            <tr>
+                <td class="text-center"><input type="checkbox"></td>
+                <td>Giacomo Guilizzoni</td>
+                <td>40</td>
+                <td>M</td>
+                <td><select class="form-select">
+                    <option selected>Cardiología</option>
+                    <option>Clínica</option>
+                    <option>Ginecología</option>
+                    <option>Geriatría</option>
+                  </select></td>
+            </tr>
+            <tr>
+                <td class="text-center"><input type="checkbox"></td>
+                <td>Marco Botton</td>
+                <td>38</td>
+                <td>M</td>
+                <td><select class="form-select">
+                    <option>Cardiología</option>
+                    <option selected>Clínica</option>
+                    <option>Ginecología</option>
+                    <option>Geriatría</option>
+                  </select></td>
+            </tr>
+            <tr>
+                <td class="text-center"><input type="checkbox"></td>
+                <td>Mariah Maclachlan</td>
+                <td>35</td>
+                <td>F</td>
+                <td><select class="form-select">
+                    <option>Cardiología</option>
+                    <option>Clínica</option>
+                    <option selected>Ginecología</option>
+                    <option>Geriatría</option>
+                  </select></td>
+            </tr>
+            <tr>
+                <td class="text-center"><input type="checkbox"></td>
+                <td>Valerie Liberty</td>
+                <td>71</td>
+                <td>F</td>
+                <td><select class="form-select">
+                    <option>Cardiología</option>
+                    <option>Clínica</option>
+                    <option>Ginecología</option>
+                    <option selected>Geriatría</option>
+                  </select></td>
+            </tr>
+        </table>
+
+    </main>
+
+    <hr>
+
+    <footer>
+        <h4>Contacto</h4>
+        <a href="https://www.instagram.com/" target="_blank"><img class="img_redes" src="../img/instagram.png" alt="Instagram"></a>
+        <a href="https://www.facebook.com/" target="_blank"><img class="img_redes" src="../img/facebook.png" alt="Facebook"></a>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
