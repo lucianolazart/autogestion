@@ -15,7 +15,7 @@ footer {
     text-align: center;
     padding: 10px 0;
     bottom: 0;
-    align-items: flex-end;
+    align-items: center;
     width: 100%;
 }
 
@@ -144,4 +144,32 @@ section {
     border: 1px solid #333333;
     padding: 10px;
     text-align: center;
+}
+
+.main-index {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    .main-index {
+        grid-template-columns: 1fr;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menuItem {
+        margin: 5px 0;
+    }
+
+    .textItem {
+        padding: 10px 20px;
+        width: 100%;
+        text-align: center;
+    }
 }
