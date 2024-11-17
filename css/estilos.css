@@ -4,12 +4,13 @@
     box-sizing: border-box;
 }
 
-body {
+
+ body {
     font-family: "Lato", sans-serif;
     background-color: #f2f2f2;
-}
+} 
 
-footer {
+ footer {
     background-color: #333333;
     color: #ffffff;
     text-align: center;
@@ -17,18 +18,18 @@ footer {
     bottom: 0;
     align-items: center;
     width: 100%;
-}
+} 
 
-h1 {
+ h1 {
     text-align: center;
     margin: 20px;
     background-color: #333333;
     color: #ffffff;
     padding: 10px;
     border-radius: 10px;
-}
+} 
 
-h2 {
+ h2 {
     text-align: center;
     margin: 20px;
 }
@@ -36,124 +37,118 @@ h2 {
 p {
     margin: 10px;
     text-align: center;
-}
+} 
 
-a {
+ a {
     text-decoration: none;
     color: #ffffff;
-}
+} 
 
-fieldset {
-    margin: 10px;
-    padding: 10px;
-    border: 1px solid #333333;
-}
-
-table {
+ table {
     width: 100%;
-}
+} 
 
-th {
+ th {
     border: 1px solid #333333;
     padding: 10px;
     background-color: #3bacb6d2;
-}
+} 
 
-td {
+ td {
     border: 1px solid #333333;
     padding: 10px;
-}
+} 
 
-tr {
+ tr {
     text-align: center;
     vertical-align: middle;
-}
+} 
 
-section {
+ section {
     text-align: center;
-}
+} 
 
-.busquedaHabitacion {
+ .busquedaHabitacion {
     text-align: center;
-}
+} 
 
-.imgEvoluciones {
+ .imgEvoluciones {
     width: 100px;
     height: 100px;
     border-radius: 10%;
-}
+} 
 
-.pacientesButtons {
+ .pacientesButtons {
     display: flex;
     justify-content: right;
     margin: 10px;
-}
+} 
 
-.pacientesButtons button {
+ .pacientesButtons button {
     margin-left: 10px;
-}
+} 
 
-.logo {
+ .logo {
     padding: 10px;
     text-align: center;
-}
+} 
 
-.img_logo {
+ .img_logo {
     width: 10%;
     height: 10%;
     border-radius: 50%;
-}
+} 
 
-.img_redes {
+ .img_redes {
     width: 40px;
     height: 40px;
-}
+} 
 
-.menu {
+ .menu {
     display: flex;
     justify-content: center;
     background-color: #333333;
     padding: 10px;
-}
+} 
 
-.menuItem {
+ .menuItem {
     margin: 10px;
     display: inline-block;
-}
+} 
 
-.textItem:hover {
+ .textItem:hover {
     background-color: #f2f2f2;
     color: #333333;
     border-radius: 10px;
     padding: 10px;
-}
+} 
 
-.habitacion {
+ .habitacion {
     text-align: center;
     list-style-position: inside;
-}
+} 
 
-.turnos {
+ .turnos {
     list-style-type: circle;
     list-style-position: inside;
     margin: 10px;
     text-align: center;
-}
+} 
 
-.consultorio {
+ .consultorio {
     border: 1px solid #333333;
     padding: 10px;
     text-align: center;
-}
+} 
 
-.main-index {
+ .main-index {
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 20px;
     padding: 20px;
-}
+} 
 
-@media (max-width: 768px) {
+ @media (max-width: 768px) {
     .main-index {
         grid-template-columns: 1fr;
     }
@@ -172,4 +167,4 @@ section {
         width: 100%;
         text-align: center;
     }
-}
+} 

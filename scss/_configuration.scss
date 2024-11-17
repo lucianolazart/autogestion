@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    background-color: $primary-color;
+}
+
+
+@media (max-width: 768px) {
+    .main-index {
+        grid-template-columns: 1fr;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menuItem {
+        margin: 5px 0;
+    }
+
+    .textItem {
+        padding: 10px 20px;
+        width: 100%;
+        text-align: center;
+    }
+}

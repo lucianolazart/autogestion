@@ -1,0 +1,49 @@
+header {
+    .logo {
+        padding: 10px;
+        text-align: center;
+
+        .img_logo {
+            width: 10%;
+            height: 10%;
+            border-radius: 50%;
+        }
+    }
+
+    h1{
+        text-align: center;
+        margin: 20px;
+        background-color: $secondary-color;
+        color: #ffffff;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    nav{
+        .menu {
+            display: flex;
+            justify-content: center;
+            background-color: $secondary-color;
+            padding: 10px;
+
+
+            .menuItem {
+                margin: 10px;
+                display: inline-block;
+
+                a {
+                    text-decoration: none;
+                    color: #ffffff;
+                    transition: all 0.3s ease;
+                }
+
+                .textItem:hover {
+                    background-color: $primary-color;
+                    color: #333333;
+                    border-radius: 10px;
+                    padding: 10px;
+                }
+            }
+        }
+    }
+}
