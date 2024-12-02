@@ -9,26 +9,62 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Sitio web para autogestión médica">
+    <meta name="keywords" content="autogestión, médica, pacientes, evoluciones, habitaciones, consultorio">
+
     <title>Autogestión médica</title>
 </head>
 <body>
 
     <header>
         <div class="logo">
-            <img class="img_logo animate__animated animate__pulse" src="./img/logo.png" alt="Logo Autogestión">
+            <a href="#"><img class="img_logo animate__animated animate__pulse" src="./img/logo.png" alt="Logo Autogestión"></a>
         </div>
 
         <h1>Autogestión médica</h1>
 
         <nav>
             <ul class="menu">
-                <li class="menuItem"><a class="textItem" href="#">Inicio</a></li>
+                <li class="menuItem"><a class="textItem menuSelected" href="#">Inicio</a></li>
                 <li class="menuItem"><a class="textItem" href="./pages/pacientes.html">Mis Pacientes</a></li>
                 <li class="menuItem"><a class="textItem" href="./pages/evoluciones.html">Mis Evoluciones</a></li>
                 <li class="menuItem"><a class="textItem" href="./pages/habitaciones.html">Habitaciones</a></li>
                 <li class="menuItem"><a class="textItem" href="./pages/consultorio.html">Consultorio</a></li>
+                <li class="menuItem"><a class="textItem" href="./pages/contacto.html">Contacto</a></li>
             </ul>
         </nav>
+
+        <div id="medicalCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+              <button type="button" data-bs-target="#medicalCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#medicalCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#medicalCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#medicalCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          </div>
+          <div class="carousel-inner">
+              <div class="carousel-item active">
+                  <img src="https://www.nosequeestudiar.net/site/assets/files/1695520/medicina-medico-estetoscopio.jpg" class="d-block w-100" alt="Medicina 1">
+              </div>
+              <div class="carousel-item">
+                  <img src="https://www.nosequeestudiar.net/site/assets/files/1695520/por-que-estudiar-la-carrera-de-medicina-medico-estetoscopio.jpg" class="d-block w-100" alt="Medicina 2">
+              </div>
+              <div class="carousel-item">
+                  <img src="https://clinicalevanterivas.com/wp-content/uploads/2023/05/composicion-vacuna-contra-coronavirus-laboratorio.jpg" class="d-block w-100" alt="Medicina 3">
+              </div>
+              <div class="carousel-item">
+                  <img src="https://www.meditips.com/wp-content/uploads/2022/05/medicina.jpg" class="d-block w-100" alt="Medicina 4">
+              </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#medicalCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#medicalCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+          </button>
+      </div>
     </header>
 
     <hr>

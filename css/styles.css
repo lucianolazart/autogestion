@@ -7,6 +7,23 @@ header .logo .img_logo {
   height: 10%;
   border-radius: 50%;
 }
+header .carousel {
+  height: 50vh;
+  display: flex;
+  align-items: center;
+}
+header .carousel .carousel-inner {
+  height: 100%;
+}
+header .carousel .carousel-inner img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+header .carousel .carousel-control-prev-icon,
+header .carousel .carousel-control-next-icon {
+  filter: invert(1);
+}
 header h1 {
   text-align: center;
   margin: 20px;
@@ -31,6 +48,12 @@ header nav .menu .menuItem a {
   transition: all 0.3s ease;
 }
 header nav .menu .menuItem .textItem:hover {
+  background-color: #f2f2f2;
+  color: #333333;
+  border-radius: 10px;
+  padding: 10px;
+}
+header nav .menu .menuItem .menuSelected {
   background-color: #f2f2f2;
   color: #333333;
   border-radius: 10px;
@@ -65,14 +88,25 @@ main .consultorio {
 }
 main .pacientesButtons {
   display: flex;
-  justify-content: right;
-  margin: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 main .pacientesButtons button {
-  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 20px;
+}
+main .pacientesButtons .btn-primary {
+  background-color: rgba(59, 172, 182, 0.8235294118);
+  border: 1px solid rgba(59, 172, 182, 0.8235294118);
+}
+main .pacientesButtons .btn-danger {
+  background-color: #ff0000;
+  border: 1px solid #ff0000;
 }
 main table {
-  width: 100%;
+  width: auto;
+  margin: 0 auto;
 }
 main table tr {
   text-align: center;
@@ -86,6 +120,65 @@ main table tr th {
 main table tr td {
   border: 1px solid #333333;
   padding: 10px;
+}
+main .contact-form {
+  text-align: center;
+  margin: 20px auto;
+  max-width: 500px;
+  padding: 20px;
+  border: 1px solid #333333;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+main .contact-form h2 {
+  margin-bottom: 20px;
+}
+main .contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+main .contact-form form .form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+}
+main .contact-form form .form-group label {
+  font-weight: bold;
+  text-align: left;
+  width: 100%;
+}
+main .contact-form form .form-group input,
+main .contact-form form .form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+main .contact-form form .form-group input:focus,
+main .contact-form form .form-group textarea:focus {
+  border-color: rgba(59, 172, 182, 0.8235294118);
+  outline: none;
+}
+main .contact-form form .form-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+main .contact-form form .form-buttons .btn-primary,
+main .contact-form form .form-buttons .btn-danger {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #fff;
+}
+main .contact-form form .form-buttons .btn-primary {
+  background-color: rgba(59, 172, 182, 0.8235294118);
+}
+main .contact-form form .form-buttons .btn-danger {
+  background-color: #ff0000;
 }
 
 h2 {

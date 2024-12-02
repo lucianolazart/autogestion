@@ -1,0 +1,27 @@
+@mixin table-style($border-color, $bg-color) {
+    width: auto;
+    margin: 0 auto;
+
+    tr {
+        text-align: center;
+        vertical-align: middle;
+
+        th {
+            border: 1px solid $border-color;
+            padding: 10px;
+            background-color: $bg-color;
+        }
+
+        td {
+            border: 1px solid $border-color;
+            padding: 10px;
+        }
+    }
+}
+
+@mixin flex-align($justify: flex-start, $align: center, $gap: 10px) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    gap: $gap;
+}
