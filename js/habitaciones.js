@@ -65,7 +65,7 @@
     seccionDisponibles.innerHTML = '';
     seccionOcupadas.innerHTML = '';
 
-    const habitacionesJSON = await fetch('habitaciones.json');
+    const habitacionesJSON = await fetch('/autogestion/json/habitaciones.json');
     console.log(habitacionesJSON);
     const habitacionesData = await habitacionesJSON.json();
     
