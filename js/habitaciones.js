@@ -66,6 +66,7 @@
     seccionOcupadas.innerHTML = '';
 
     const habitacionesJSON = await fetch('habitaciones.json');
+    console.log(habitacionesJSON);
     const habitacionesData = await habitacionesJSON.json();
     
     habitacionesData.disponibles.forEach(habitacion => {
