@@ -1,0 +1,32 @@
+{
+    "disponibles": [
+      { "numero": "101", "estado": "disponible" },
+      { "numero": "102", "estado": "disponible" },
+      { "numero": "103", "estado": "disponible" },
+      { "numero": "104", "estado": "disponible" },
+      { "numero": "105", "estado": "disponible" },
+      { "numero": "110", "estado": "disponible" }
+    ],
+    "ocupadas": [
+      { 
+        "numero": "106", 
+        "estado": "ocupada",
+        "paciente": "Giacomo Guilizzoni"
+      },
+      { 
+        "numero": "107", 
+        "estado": "ocupada",
+        "paciente": "Marco Botton"
+      },
+      { 
+        "numero": "108", 
+        "estado": "ocupada",
+        "paciente": "Mariah Maclachlan"
+      },
+      { 
+        "numero": "109", 
+        "estado": "ocupada",
+        "paciente": "Valerie Liberty"
+      }
+    ]
+}

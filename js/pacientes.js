@@ -2,11 +2,42 @@ const agregarButton = document.querySelector(".btn.btn-primary");
 const eliminarButton = document.querySelector(".btn.btn-danger");
 const table = document.querySelector("table");
 
+const mostrarNotificacion = (mensaje, tipo) => {
+  Toastify({
+    text: mensaje,
+    duration: 3000,
+    gravity: "bottom",
+    position: "right",
+    style: {
+      background: tipo === "success" ? "#28a745" : "#dc3545",
+      borderRadius: "8px",
+      boxShadow: "0 3px 6px rgba(0,0,0,0.16)",
+      fontSize: "14px",
+      padding: "12px 20px",
+      fontWeight: "500",
+      color: "white"
+    },
+    onClick: function(){},
+    stopOnFocus: true,
+    close: true,
+    className: "custom-toast",
+    offset: {
+      x: 20,
+      y: 20
+    },
+    escapeMarkup: false,
+  }).showToast();
+};
+
 const cargarPacientes = () => {
   const pacientes = JSON.parse(localStorage.getItem("pacientes")) || [];
   pacientes.forEach((paciente) => {
     agregarFilaPaciente(paciente.nombre, paciente.edad, paciente.genero, paciente.servicio);
   });
+
+  if (pacientes.length > 0) {
+    mostrarNotificacion(`Se cargaron ${pacientes.length} paciente(s)`, "success");
+  }
 };
 
 const guardarPacientes = () => {
@@ -58,15 +89,23 @@ const agregarFilaPaciente = (nombre = "", edad = "-", genero = "-", servicio = "
 
 agregarButton.addEventListener("click", () => {
     agregarFilaPaciente();
+    mostrarNotificacion("Paciente agregado correctamente. Complete sus datos.", "success");
 });
 
 eliminarButton.addEventListener("click", () => {
   const checkboxes = table.querySelectorAll("input[type='checkbox']:checked");
+
+  if (checkboxes.length === 0) {
+    mostrarNotificacion("Selecciona al menos un paciente para eliminar", "error");
+    return;
+  }
+
   checkboxes.forEach((checkbox) => {
     const fila = checkbox.closest("tr");
     fila.remove();
   });
   guardarPacientes();
+  mostrarNotificacion(`Se eliminaron ${checkboxes.length} paciente(s)`, "success");
 });
 
 table.addEventListener("input", guardarPacientes);
